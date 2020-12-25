@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .div1{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        float: left;
+      }
+      .div2{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        float: right;
+      }
+      .浮动布局特点{
+
+        width: 100%;
+        float: left;
+      }
+      .浮动元素排序规则{
+        width: 100%;
+        float: left;
+      }
+      .字围{
+        width: 500px;
+        height: auto;
+        background-color: white;
+        float: left;
+
+      }
+      .textP{
+        width: 500px;
+        height: 800px;
+        background-color: yellow;
+
+      }
+      .imgBaidu{
+        width: 200px;
+        height: auto;
+        float: left;
+      }
+
+      .验证1{
+        /* display: flex; */
+        width: 100%;
+        height: auto;
+        background-color: orange;
+        float: left;
+      }
+      .float_rule1{
+        display: flex;
+      }
+      .float_rule1_1{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        float: left;
+
+      }
+      .float_rule1_2{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        float: left;
+      }
+
+      .验证2{
+        width: 100%;
+        height: auto;
+        background-color: orange;
+        float: left;
+      }
+      .float_rule2{
+
+      }
+      .float_rule2_1{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        float: left;
+
+      }
+      .float_rule2_2{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        float: right;
+      }
+      .float_rule2_3{
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        float: left;
+      }
+      .float_rule2_4{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        float: right;
+      }
+
+      .验证3{
+        width: 100%;
+        height: auto;
+        background-color: orange;
+        float: left;
+      }
+      .float_rule3{
+
+      }
+      .float_rule3_1{
+        width: 100px;
+        height: 200px;
+        background-color: red;
+        float: left;
+
+      }
+      .float_rule3_2{
+        width: 150px;
+        height: 200px;
+        background-color: blue;
+
+      }
+      .float_rule3_3{
+        width: 50px;
+        height: 200px;
+        background-color: yellow;
+
+      }
+      .float_rule3_4{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+
+<div class="">
+  <div class="div1">
+    居左
+  </div>
+  <div class="div2">
+    居右
+  </div>
+</div>
+
+    <div class="浮动布局特点">
+      <h2>浮动布局特点</h2>
+      <ol>
+        <li>float 布局中只有左，右对齐，没有center对齐</li>
+        <li>浮动流是一种水平排版方式</li>
+        <li>如果前一个元素浮动了，后一个没有浮动，那么前一个会盖在后一个上面</li>
+        <li>脱标：也就是从标准流中删除，所以后面跟的元素会浮动上来，这个说法很形象</li>
+      </ol>
+    </div>
+
+
+<div class="浮动元素排序规则">
+  <h2>浮动元素排序规则</h2>
+  <ol>
+    <li>相同方向上的浮动元素，(如水平方向)先浮动的元素会显示在前面，后浮动的元素会显示在后面。</li>
+    <li>不同方向上的浮动元素，左浮动会找左浮动，右浮动会找右浮动</li>
+    <li>浮动元素浮动之后的位置，由浮动元素浮动之前在标准流中的位置来确定</li>
+  </ol>
+</div>
+
+
+    <!-- 图文混排  -->
+    <div class="字围">
+      <h2>下面来一个图文混排例子</h2>
+          <img class="imgBaidu" src="https://iknow-pic.cdn.bcebos.com/0b55b319ebc4b745202b0f40c2fc1e178a82152c" alt="">
+
+          <p class="textP">“菩提本无树，明镜亦非台。本来无一物，何处惹尘埃”这句禅语是什么意思？
+            菩提是个觉道bai，又有什么树呢？心du如明镜台，其实zhi根本dao没有个台。本来就什zhuan么都没有，也没有一个样子，也没有一个图，或一个形相。既然什么都没有，尘埃又从那里生出呢？根本就无所住了。
+      赏析：
+      心即自性，和常人的思想不是一回事，人的思想是后天培养的，自性是先天的，常人是思想做主，障碍自性。
+      佛家语，万事万物都是妄念牵动自性而起的幻相，而非自性起用，身也是因心有尘，尘即妄念，牵动自性而起的幻相，当然身的相和前世有关了，尘是妄念，自性是圆满的清净的，妄念非心非自性所发。
+      人若悟得自性，自性做主，再起念，不称作妄念了，生活中的一切都是自性在起作用，自性圆满清净，其性空，缘起缘灭，非常自在，根本没有妄念，有何谈有染！
+      心即自性，和常人的思想不是一回事，人的思想是后天培养的，自性是先天的，常人是思想做主，障碍自性。
+      佛家语，万事万物都是妄念牵动自性而起的幻相，而非自性起用，身也是因心有尘，尘即妄念，牵动自性而起的幻相，当然身的相和前世有关了，尘是妄念，自性是圆满的清净的，妄念非心非自性所发。
+      人若悟得自性，自性做主，再起念，不称作妄念了，生活中的一切都是自性在起作用，自性圆满清净，其性空，缘起缘灭，非常自在，根本没有妄念，有何谈有染！
+      心即自性，和常人的思想不是一回事，人的思想是后天培养的，自性是先天的，常人是思想做主，障碍自性。
+      佛家语，万事万物都是妄念牵动自性而起的幻相，而非自性起用，身也是因心有尘，尘即妄念，牵动自性而起的幻相，当然身的相和前世有关了，尘是妄念，自性是圆满的清净的，妄念非心非自性所发。
+      人若悟得自性，自性做主，再起念，不称作妄念了，生活中的一切都是自性在起作用，自性圆满清净，其性空，缘起缘灭，非常自在，根本没有妄念，有何谈有染！</p>
+
+    </div>
+
+
+    <div class="验证1">
+      <h2>验证1</h2>
+      <div class="float_rule1">
+        <div class="float_rule1_1"></div>
+        <div class="float_rule1_2"></div>
+      </div>
+    </div>
+
+    <div class="验证2">
+      <h2>验证2</h2>
+      <div class="float_rule2">
+        <div class="float_rule2_1"></div>
+        <div class="float_rule2_2"></div>
+        <div class="float_rule2_3"></div>
+        <div class="float_rule2_4"></div>
+      </div>
+    </div>
+
+    <div class="验证3">
+      <h2>验证3</h2>
+      <div class="float_rule3">
+        <div class="float_rule3_1"></div>
+        <div class="float_rule3_2"></div>
+        <div class="float_rule3_3"></div>
+        <div class="float_rule3_4"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

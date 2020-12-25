@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .father{
+      background-color: gray;
+      width: 250px;
+      height: 300px;
+    }
+      .div1{
+        width: 50px;
+        height: 200px;
+        float: left;
+        background-color: red;
+      }
+      .div2{
+        width: 50px;
+        height: 50px;
+        float: left;
+        background-color: blue;
+      }
+      .div3{
+        width: 200px;
+        height: 200px;
+        float: left;
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>当父元素的宽度足够容纳子元素时，子元素就会不断地从左往右贴靠，当超出时，子元素会寻找前一个元素，继续贴靠</h2>
+    <div class="father">
+      <div class="div1"> <h1>1</h1> </div>
+      <div class="div2"> <h1>2</h1> </div>
+      <div class="div3"> <h1>3</h1> </div>
+    </div>
+
+
+
+
+  </body>
+</html>　
