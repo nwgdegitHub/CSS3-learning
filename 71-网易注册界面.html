@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .header{
+        width: 960px;
+        height: 80px;
+        background-color: red;
+        margin: 0 auto;
+        padding-top: 28px;
+        box-sizing: border-box;
+      }
+      .content{
+        width: 960px;
+        height: 600px;
+        background-color: green;
+        margin: 0 auto;
+      }
+      .footer{
+        width: 960px;
+        height: 48px;
+        background-color: yellow;
+        margin: 0 auto;
+      }
+      .header .logo{
+        width: 644px;
+        height: 27px;
+        /* 图片不平铺 0 0 起始 */
+        /* background: url("") no-repeat 0 0; */
+        background-color: orange;
+        float: left;
+      }
+      .header .links{
+        width: 200px;
+        height: 27px;
+        background-color: orange;
+        float: right;
+        text-align: right;
+      }
+      .header .links a{
+        text-decoration: none;
+        font-size: 12px;
+        color: gray;
+      }
+      .content .top{
+        width: 960px;
+        height: 38px;
+        background-color: pink;
+
+      }
+      .content .bottom{
+        width: 960px;
+        height: 562px;
+        background-color: blue;
+      }
+      .content .top p{
+        height: 38px;
+        line-height: 38px;
+        color: white;
+      }
+      .content .bottom .article{
+        width: 642px;
+        height: 562px;
+        background-color: red;
+        float: left;
+        padding-top: 50px;
+        padding-left: 80px;
+        box-sizing: border-box;
+      }
+      .content .bottom .aside{
+        width: 318px;
+        height: 562px;
+        background-color: tomato;
+        float: right;
+      }
+      .content .bottom .article .articleTop{
+        width: 560px;
+        height: 60px;
+        background-color: yellow;
+      }
+      .content .bottom .article .articleBottom{
+        width: 560px;
+        height: 373px;
+        background-color: green;
+      }
+      .content .bottom .article .articleTop ul{
+        width: 412px;
+        height: 34px;
+        background-color: tomato;
+        list-style: none;
+      }
+      .content .bottom .article .articleTop ul li{
+        /* 浮动让选项卡横着排列 */
+        float: left;
+        width: 137px;
+        height: 34px;
+        background-color:skyblue;
+        line-height: 34px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+      </div>
+      <div class="links">
+        <a href="#">乐姐更多</a>
+        |
+        <a href="#">反馈建议</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="top">
+        <p>李南江」HTML+CSS 基础入门教程全套视频 | HTML5+CSS3基础+案例</p>
+      </div>
+      <div class="bottom">
+        <div class="article">
+          <div class="articleTop">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="articleBottom">
+
+          </div>
+        </div>
+        <div class="aside">
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+    <!-- FireWork 是一个工具 -->
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .div1{
+        background-color: yellow;
+
+      }
+      .wall{
+        clear:both;
+      }
+      .h20{
+        height: 20px;
+        background-color: skyblue;
+      }
+      .div2{
+        background-color: orange;
+        margin-top: 20px;
+      }
+      .div1 p{
+        background-color: gray;
+        width: 300px;
+
+      }
+      .div2 p{
+        background-color: gray;
+        width: 300px;
+
+      }
+      p{
+        float: left;
+      }
+
+    </style>
+  </head>
+  <body>
+
+  <!-- 隔墙法：
+  外墙法 可以使第二个盒子margin-top可用 但使第一个盒子margin-bottom仍不可用
+  内墙法
+清除浮动之后margin属性仍然可用,做法就是在两个盒子之间加一个div 或者h1这样的块级元素
+设置一下 clear:both 就可以了
+ -->
+ <div class="div1">
+   <p>怕死求不死，拜的就是贪生魔。</p>
+   <p>怕病求不病，拜的也是贪生魔。</p>
+ </div>
+ <div class="wall h20"></div>
+ <div class="div2">
+   <p>怕穷求富贵，拜的就是贪财魔。</p>
+   <p>怕穷求富贵，拜的就是贪财魔。</p>
+ </div>
+  </body>
+</html>

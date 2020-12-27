@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      div{
+        background-color: orange;
+        width: 200px;
+        height: 200px;
+      }
+      div::before{
+        content: "子曰";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+      div::after{
+        content: "孟子曰";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        /* 隐藏添加的元素可以这样做 */
+        /* height: 0; */
+        /* visibility: hidden; */
+
+
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="">
+      我是文字
+    </div>
+
+  </body>
+</html>

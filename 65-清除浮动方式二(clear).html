@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .div1{
+        background-color: yellow;
+        /* height: 50px; */
+      }
+      .div2{
+        background-color: orange;
+        clear:left;
+        /* 当添加了clear之后 margin属性失效
+        可以从浮动的经过去理解 */
+      }
+      .div1 p{
+        background-color: gray;
+        width: 300px;
+
+      }
+      .div2 p{
+        background-color: gray;
+        width: 300px;
+
+      }
+      p{
+        float: left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- 清除浮动方式使用clear属性,默认是none
+    clear:none 按照浮动流布局 左浮动找左浮动 右浮动找右浮动
+    clear:left 不要找前面的左浮动元素
+
+   -->
+    <div class="div1">
+      <p>怕死求不死，拜的就是贪生魔。</p>
+      <p>怕病求不病，拜的也是贪生魔。</p>
+    </div>
+    <div class="div2">
+      <p>怕穷求富贵，拜的就是贪财魔。</p>
+      <p>怕穷求富贵，拜的就是贪财魔。</p>
+    </div>
+  </body>
+</html>
