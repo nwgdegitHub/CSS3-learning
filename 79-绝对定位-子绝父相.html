@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      ul{
+        width: 800px;
+        height: 50px;
+        margin: 0 auto;
+      }
+      ul li{
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        background-color: tomato;
+        text-align: center;
+        list-style: none;
+        float: left;
+      }
+      /* 找到第4个li */
+      ul li:nth-of-type(4){
+        background-color: orange;
+        /* position: relative; */
+      }
+      ul li img{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: relative;
+        left: -30px;
+        top: -10px;
+        /* position: absolute;
+        left: 0;
+        top: 0; */
+        /* position: absolute;
+        left: 40px;
+        top: 1px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    相对定位： 有弊端，不会脱离标准流，会占用标准流空间，此例子文字无法居中
+    绝对定位：
+    相对+绝对：合适
+    都试试看？
+   -->
+    <ul>
+      <li>服装</li>
+      <li>服装</li>
+      <li>服装</li>
+      <li>全球购<img src="./uplus.png" alt=""></li>
+      <li>服装</li>
+      <li>服装</li>
+      <li>服装</li>
+      <li>服装</li>
+
+    </ul>
+  </body>
+</html>

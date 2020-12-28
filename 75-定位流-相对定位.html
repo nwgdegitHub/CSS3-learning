@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .div1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .div2{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        /* right: 50px; */
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+      .div3{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+      }
+
+      input{
+        width: 200px;
+        height: 50px;
+      }
+      img{
+        width: 200px;
+        height: 50px;
+        position: relative;
+        top: 0px; /* 调节top值 使得顶部对齐 */
+
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1.相对定位:
+    顾名思义 就是相对自己之前在标准流中的位置 移动
+    不会从标准流布局中删除 要结合top left right bottom 一起使用
+    注意 在同一方向上只能使用一个 比如left: 50px;right: 50px; 只有一个会生效
+    区分块级元素/行内元素/行内块级元素
+    给相对定位的元素设置margin或者padding属性时，相当于给原来标准流中的该元素设置margin或者padding
+    常用于：微调元素，搭配绝对定位使用
+    2.绝对定位
+
+    3.固定定位
+
+    4.静态定位
+  -->
+  <div class="div1"></div>
+
+  <div class="div2"></div>
+
+  <div class="div3"></div>
+
+  <input type="text" name="" value="">
+  <img src="https://image.baidu.com/search/detail?ct=503316480&z=0&tn=baiduimagedetail&ipn=d&word=头像&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=-1&hd=undefined&latest=undefined&copyright=undefined&cs=1475331839,2066156315&os=3889976703,1110367108&simid=4239888935,715432668&pn=5&rn=1&di=110770&ln=30&fr=&fmq=1461834053046_R&fm=&ic=0&s=0&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=2&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%253A%252F%252Fb-ssl.duitang.com%252Fuploads%252Fitem%252F201901%252F19%252F20190119231949_buetu.jpg%26refer%3Dhttp%253A%252F%252Fb-ssl.duitang.com%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1611716044%26t%3D65a99fc254f3f45dafd7ea1066be816d&rpstart=0&rpnum=0&adpicid=0&force=undefined" alt="">
+
+
+  </body>
+</html>

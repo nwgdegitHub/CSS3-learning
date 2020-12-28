@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        /* .div1{
+          width: 400px;
+          height: 50px;
+          background-color: orange;
+          margin: 0 auto;
+          position: absolute;
+        } */
+
+        .div1{
+          width: 400px;
+          height: 50px;
+          background-color: orange;
+          /* 绝对定位中，将margin-left设置为width的一半,left设为50%
+          这样元素就永远水平居中了 */
+          margin-left: -200px;
+          position: absolute;
+          left: 50%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p>margin: 0 auto;在绝对定位流中无效</p>
+    </div>
+  </body>
+</html>
