@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      /* div{
+        background-color: yellow;
+        border: 1px solid gold;
+        width: 200px;
+        height: 5000px;
+        background-image: url(./123.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      } */
+      div{
+        width: 200px;
+        height: 200px;
+      }
+
+      .box1{
+        background-color: yellow;
+      }
+      .box2{
+        background-color: red;
+        position: fixed;
+        left: 20px;
+      }
+      .box3{
+        background-color: blue;
+      }
+      span{
+        width: 500px;
+        height: 900px;
+        background-color: yellow;
+        position: fixed;
+      }
+      .box4{
+        height: 5000px;
+        background-color: tomato;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class=""></div> -->
+
+    <!-- 固定定位会脱离标准流 然后相对于原来的位置布局 -->
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <span>固定定位中是否区分块级元素，行内元素，行内块元素?</span>
+    <div class="box4"></div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        width: 200px;
+        height: 100px;
+        background-color: orange;
+        /* 分开写 */
+        /* transition-property: width,height;
+        transition-duration: 5s,5s;
+        transition-delay: 3s; */
+/* 连写 */
+transition: width 5s linear 0s;
+
+      }
+      /* 要想有过渡效果，必须指明要变化的属性，和变化之后的值 */
+      div:hover{
+        width: 800px;
+        height: 500px;
+        margin: 0 auto;
+
+      }
+      ul{
+        width: 800px;
+        height: 500px;
+        background-color: pink;
+      }
+      ul li{
+
+        list-style: none;
+        width: 100px;
+        height: 50px;
+        margin-top: 50px;
+        background-color: blue;
+        transition-property: margin-left;
+        transition-duration: 5s;
+      }
+
+      ul:hover li{
+        margin-left: 700px;
+      }
+
+/* 指明过渡的速度 */
+      ul li:nth-child(1){
+transition-timing-function: linear;
+      }
+      ul li:nth-child(2){
+transition-timing-function:ease;
+      }
+      ul li:nth-child(3){
+transition-timing-function: ease-in;
+      }
+      ul li:nth-child(4){
+transition-timing-function:ease-out;
+      }
+      ul li:nth-child(4){
+transition-timing-function:ease-in-out;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class=""></div>
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+
+
+  </body>
+</html>
