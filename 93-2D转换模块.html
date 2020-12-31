@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    ul{
+      width: 800px;
+      height: 500px;
+      background-color: pink;
+    }
+    ul li{
+
+      list-style: none;
+      width: 100px;
+      height: 50px;
+      margin-top: 50px;
+      background-color: blue;
+      transition-property: margin-left;
+      transition-duration: 5s;
+    }
+    ul li:nth-child(2){
+      /* deg是单位 代表度 */
+      transform: rotate(45deg);
+    }
+    ul li:nth-child(3){
+      /* x,y轴平移 */
+      transform: translate(0px,0px);
+    }
+    ul li:nth-child(4){
+      /* x,y轴缩放  参数一个表示x,y一样*/
+      transform: scale(2,2);
+
+    }
+    /* 综合的时候会修改坐标系 */
+
+    ul:hover li{
+
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- 旋转 平移 缩放 综合
+
+   -->
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+   </ul>
+
+
+  </body>
+</html>

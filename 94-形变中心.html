@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      ul{
+        width: 200px;
+        height: 200px;
+        border: 1px solid gold;
+        margin: 100px auto;
+        position: relative;
+
+      }
+      ul li{
+        list-style: none;
+        width: 200px;
+        height: 200px;
+
+        /* 在这里可以改变中心点
+        以下为四条边的顶点 和矩形中心点
+        */
+        /* transform-origin: left; */
+        /* transform-origin: right; */
+        /* transform-origin:center; */
+        /* transform-origin:top; */
+        /* transform-origin:bottom; */
+
+        /* x y轴方向 */
+        /* transform-origin:0 0; */
+      }
+      ul li:nth-child(1){
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotate(30deg);
+      }
+      ul li:nth-child(2){
+        background-color: blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotate(50deg);
+      }
+      ul li:nth-child(3){
+        background-color: green;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotate(70deg);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </body>
+</html>
