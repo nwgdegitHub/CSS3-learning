@@ -11,7 +11,7 @@
     }
     ul li{
 
-      list-style: none;
+      /* list-style: none; */
       width: 100px;
       height: 50px;
       margin-top: 50px;
@@ -21,18 +21,20 @@
     }
     ul li:nth-child(2){
       /* deg是单位 代表度 */
-      transform: rotate(45deg);
+      /* transform: rotate(45deg); */
+      transform: rotateX(50deg);
+      /* transform: rotateY(45deg); */
     }
     ul li:nth-child(3){
       /* x,y轴平移 */
-      transform: translate(0px,0px);
+      transform: translate(100px,0px);
     }
     ul li:nth-child(4){
       /* x,y轴缩放  参数一个表示x,y一样*/
       transform: scale(2,2);
 
     }
-    /* 综合的时候会修改坐标系 */
+    /* 综合的时候会修改坐标系 第二下以第一下为参考*/
 
     ul:hover li{
 

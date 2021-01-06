@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+      .father{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+                margin: 100px auto;
+                margin-top: 100px;
+                perspective: 500px;
+
+                transform-style: preserve-3d;
+                transform: rotateY(0deg);
+      }
+      .son{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        border: 1px solid black;
+transform: rotateY(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 默认是2D
+
+  添加transform-style: preserve-3d;即可-->
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .div1{
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+
+
+        /* 动画3要素：名字 时间 动画函数 */
+        /* animation-name: lnj; */
+        /* animation-duration:1s; */
+
+        /* 其他属性 */
+        /* animation-delay: 2s; */
+        /* 速度 */
+        /* animation-timing-function: linear; */
+        /* 执行次数 */
+        /* animation-iteration-count: 2;  */
+        /* 是否往返 */
+        /* animation-direction: alternate; */
+        /* 暂停 */
+        /* animation-play-state: paused; */
+        animation: lnj 1s linear 100ms 4 alternate;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+      }
+      @keyframes lnj{
+        from{
+          margin-left: 0;
+        }
+        to{
+          margin-left: 500px;
+        }
+      };
+
+    </style>
+  </head>
+  <body>
+    <!--
+    animation: 动画名称 动画时长 动画速度 延迟时间 执行次数 往返动画
+    -->
+    <div class="div1"></div>
+  </body>
+</html>
