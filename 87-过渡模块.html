@@ -9,18 +9,20 @@
         height: 100px;
         background-color: orange;
         /* 分开写 */
-        /* transition-property: width,height;
+        transition-property: width,height;
         transition-duration: 5s,5s;
-        transition-delay: 3s; */
+        transition-delay: 0s;
+
+
 /* 连写 */
-transition: width 5s linear 0s;
+/* transition: width 5s linear 0s; */
 
       }
       /* 要想有过渡效果，必须指明要变化的属性，和变化之后的值 */
       div:hover{
         width: 800px;
         height: 500px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
 
       }
       ul{
@@ -73,7 +75,7 @@ transition-timing-function:ease-in-out;
       <li></li>
       <li></li>
     </ul>
-    
+
 <!-- 编写过渡模块的套路
 1.不要管过渡，先编写基本界面
 2.修改我们认为需要修改的属性

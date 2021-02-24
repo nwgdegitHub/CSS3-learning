@@ -39,6 +39,7 @@
       .sub>li{
         list-style: none;
         background-color: deeppink;
+        /* 预先翻转180 */
         transform: rotateY(180deg);
         transition: 0.5s;
         /* 先让元素不可见　 */
@@ -51,7 +52,7 @@
 
       }
 
-/* 鼠标悬停 */
+      /* 鼠标悬停 */
       .navi>li:hover .sub>li:nth-child(1){
         transition-delay: 0ms;
       }

@@ -8,6 +8,9 @@
         margin: 0;
         padding: 0;
       }
+      body{
+        border:1px solid black;
+      }
       .div1{
         background-color: yellow;
         /* height: 50px; */
@@ -16,7 +19,15 @@
         background-color: orange;
         clear:left;
         /* 给第二个盒子添加了clear之后 margin-top属性失效
-        可以从浮动的经过去理解 */
+        可以从浮动的经过去理解 :
+        浮动么 不就是先从标准流删除 然后再布局
+        浮动元素不能撑起父元素高度 给一个子元素设置margin-top 如果父元素没有设置border
+        那么子元素也会被顶下去
+
+        如果想让margin-top 有效 可以给body设置border:1px solid black;
+        margin-top:18px 超过18px就有效果了
+        但是企业开发中没人会这么干
+        */
         margin-top: 100px;
       }
       .div1 p{

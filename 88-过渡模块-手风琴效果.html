@@ -30,11 +30,16 @@
       height: 100%;
     }
 
-    /* 鼠标悬浮在ul上
-    为哈这里是100px?
+    /* 鼠标悬浮在ul上 让所有li的宽度都是120px 因为CSS 是层叠样式
+    为哈这里是120px?
+    让所有的li的width = 120px
+
+    这里原理 就是 一共5张图片 也就是5个li
+    当前li + 其余li = ul总宽度
+    500 + 120*4 + border = 1000
     */
     ul:hover li{
-      width: 100px;
+      width: 120px;
 
     }
     /* 鼠标悬浮在当前li上 */
@@ -46,11 +51,11 @@
   </head>
   <body>
     <ul>
-      <li><img src="lyf/f1.jpg" alt=""></li>
-      <li><img src="lyf/f2.jpg" alt=""></li>
-      <li><img src="lyf/f3.jpg" alt=""></li>
-      <li><img src="lyf/f4.jpg" alt=""></li>
-      <li><img src="lyf/f5.jpg" alt=""></li>
+      <li><img src="img/lyf/f1.jpg" alt=""></li>
+      <li><img src="img/lyf/f2.jpg" alt=""></li>
+      <li><img src="img/lyf/f3.jpg" alt=""></li>
+      <li><img src="img/lyf/f4.jpg" alt=""></li>
+      <li><img src="img/lyf/f5.jpg" alt=""></li>
     </ul>
 
   </body>
