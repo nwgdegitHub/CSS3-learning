@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      /* 和p同级别第1个标签 不管类型  last-child表示同级别最后一个 */
+      p:first-child{
+        background-color: red;
+      }
+
+      /* 和p同类型第一个 */
+      /* p:first-of-type{
+        color: pink;
+      } */
+
+      /* 和p同级别第4个标签 不管类型
+      传odd / even 表示奇偶
+      xn+y 其中n从0开始
+      */
+      p:nth-child(4){
+        color: skyblue;
+      }
+
+/* 父元素中唯一的元素 也就是span的父级 然后下面只有一个元素*/
+      span:only-child{
+        color: white;
+        background-color: orange;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!--
+     1.同级别第几个
+    2.同类型第几个 -->
+
+    <div class="">
+      <p>同级别第1个</p>
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <p>2</p>
+      <h3>h3</h3>
+      <p>3</p>
+      <h4>h4</h4>
+      <p>4</p>
+      <h5>h5</h5>
+      <p>5</p>
+      <h6>h6</h6>
+      <p>6</p>
+      <p>7</p>
+    </div>
+
+    <span>我是段落1</span>
+    <div>
+      <span>我是段落2</span>
+      <h1>我是标题</h1>
+    </div>
+    <div>
+      <span>我是段落3</span>
+    </div>
+
+    <div>
+      <span>我是段落4</span>
+      <span>我是段落5</span>
+      <h1>我是标题</h1>
+    </div>
+
+  </body>
+</html>
