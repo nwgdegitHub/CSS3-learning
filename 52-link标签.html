@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- 2.嵌入 -->
+    <style media="screen">
+      /* 4. 导入 注意导入语句要写在第一句 否则不生效*/
+      @import url(52-0-style.css);
+
+      .div1{
+        background: blue;
+        /* display: none; */
+      }
+
+    </style>
+    <!-- 3. 链接-->
+    <!-- <link rel="stylesheet" href="53-0-style.css"> -->
+  </head>
+  <body>
+    <!-- 1. 内联  style="background:red;"-->
+    <div class="div1">
+
+    </div>
+
+    <script type="text/javascript">
+      // @import url(52-1JS.js); 不可以用来导入JS
+      window.onload = function(ev){
+        alert("window.onload")
+      }
+    </script>
+
+  </body>
+</html>
+
+<!-- 页面导入样式,使用link与@import有什么区别?
+1.link属于html标签，通过 <link> 标签中的 href 属性来引入外部文件，而 @import 属于 CSS
+2.@import不支持低版本浏览器
+3.当 HTML 文件被加载时，link 引用的文件会同时被加载，而 @import 引用的文件则会等页面所有下载完毕再被加载；
+所以推荐link ,不推荐@import -->

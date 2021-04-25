@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .div1{
+        width: 1000px;
+        height: 1px;
+        transform: scale(0.5);
+        background-color: red;
+      }
+      .a{
+             width: 0;
+             height: 0;
+             border-width: 100px;
+             border-style: solid;
+             border-color: transparent #0099CC transparent transparent; /*颜色留一个就成了 上右下左*/
+             transform: rotate(90deg); /*顺时针旋转90°*/
+           }
+    </style>
+  </head>
+  <body>
+    <!-- 画一条0.5px的直线？ -->
+    <div class="div1"></div>
+    <hr>
+
+
+<!-- 画一个三角形 -->
+<div class="a"></div>
+
+  </body>
+</html>
