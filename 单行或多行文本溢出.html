@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .one{
+        width:200px;
+        height:20px;
+        background-color: yellow;
+
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      .three{
+        width:400px;
+        height:70px;
+        background-color: orange;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="">
+      <p class="one">直接上效果：相对于多行文本溢出做处理， 单行要简单多，且更容易理解。</p>
+      <p class="three">1、-webkit-line-clamp 用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：2、display: -webkit-box; 必须结合的属性，将对象作为弹性伸缩盒子模型显示 。3、-webkit-box-orient 必须结合的属性，设置或检索伸缩盒对象的子元素的排列方式 。</p>
+    </div>
+
+  </body>
+</html>
