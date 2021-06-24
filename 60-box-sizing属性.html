@@ -14,9 +14,13 @@
         list-style: none;
         width: 40px;
         border: 5px solid gold;
+        padding-left: 1px;
         float: left;
         text-align: center;
         box-sizing: border-box;
+        /* 设置了该属性，会牺牲一部分width: ，用来抵消border, 整个width也还是40px, padding和border仍包含在width  */
+
+        /* box-sizing: content-box; */
       }
       .div1{
         width: 500px;
@@ -58,9 +62,16 @@
       <li>5</li>
     </ol>
     <!--
-    box-sizing 可以保证给盒子增加了padding和border属性之后，
-    盒子的元素宽度和高度不变，
-    原理就是减去一部分内容的宽度和高度
+    6. 说说盒子模型？
+    盒子是对html中所有标签的一个形象的比喻
+    由里向外content,padding,border,margin
+    在IE盒子模型中，width表示content+padding+border这三个部分的宽度
+    在标准的盒子模型中，width指content部分的宽度
+
+    CSS3中有个box-sizing属性可以控制盒子的计算方式，详见CSS 代码 60-box-sizing属性
+    content-box：padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和。
+    border-box：padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值。
+
   -->
     <div class="div1">
       <div class="div2"></div>
